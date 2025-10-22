@@ -9,7 +9,7 @@ public class Aritmetica implements MediaStrategy {
 
     @Override
     public String verificarSituacao(double media) {
-        return media >= 6.0 ? "Aprovado" : "Reprovado";
+        return media >= 5.0 ? "Aprovado" : "Reprovado";
     }
     
 }

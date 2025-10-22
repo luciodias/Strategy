@@ -9,7 +9,7 @@ public class Geometrica implements MediaStrategy {
 
     @Override
     public String verificarSituacao(double media) {
-        return media >= 6.0 ? "Aprovado" : "Reprovado";
+        return media >= 7.0 ? "Aprovado" : "Reprovado";
     }
     
 }
