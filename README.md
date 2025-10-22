@@ -795,12 +795,13 @@ Use este checklist para garantir que não esqueceu nada:
 - [x] Classe `Disciplina` criada com construtor recebendo estratégia
 - [x] Método `calcularMedia()` delega para a estratégia
 - [x] Todos os getters e setters implementados
-- [ ] Classe `Main` criada testando ambas as estratégias
-- [ ] Código compilando sem erros
+- [x] Classe `Main` criada testando ambas as estratégias
+- [x] Código compilando sem erros
 - [x] Código organizado nos pacotes corretos
 - [x] Anotação `@Override` em todos os métodos implementados
 - [x] Saída formatada corretamente com duas casas decimais
-- [ ] Testes manuais realizados com diferentes notas
+- [x] Testes manuais realizados com diferentes notas
+- [x] Testes **automáticos** com **JUnit**
 
 ---
 
