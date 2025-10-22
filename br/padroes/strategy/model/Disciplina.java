@@ -46,13 +46,13 @@ public class Disciplina {
      * Altera a nota P1
      * @param p1 nota da primeira avaliação
      */
-    public void setP1(double p1) {this.p1 = p1;}
+    public void setP1(double p1) {this.p1 = validarNota(p1);}
     
     /**
      * Altera a nota P2
      * @param p2 nota da segunda avaliação
      */
-    public void setP2(double p2) {this.p2 = p2;}
+    public void setP2(double p2) {this.p2 = validarNota(p2);}
 
     /**
      * @return nome da disciplina
