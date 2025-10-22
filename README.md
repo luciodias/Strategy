@@ -785,21 +785,21 @@ br.padroes.strategy/
 
 Use este checklist para garantir que não esqueceu nada:
 
-- [ ] Interface `MediaStrategy` criada com os dois métodos
-- [ ] Classe `Aritmetica` implementa `MediaStrategy`
-- [ ] Classe `Geometrica` implementa `MediaStrategy`
-- [ ] Fórmula aritmética implementada corretamente: `(p1 + p2) / 2`
-- [ ] Fórmula geométrica implementada corretamente: `√(p1 × p2)`
-- [ ] Critério de aprovação da aritmética: `≥ 5.0`
-- [ ] Critério de aprovação da geométrica: `≥ 7.0`
-- [ ] Classe `Disciplina` criada com construtor recebendo estratégia
-- [ ] Método `calcularMedia()` delega para a estratégia
-- [ ] Todos os getters e setters implementados
+- [x] Interface `MediaStrategy` criada com os dois métodos
+- [x] Classe `Aritmetica` implementa `MediaStrategy`
+- [x] Classe `Geometrica` implementa `MediaStrategy`
+- [x] Fórmula aritmética implementada corretamente: `(p1 + p2) / 2`
+- [x] Fórmula geométrica implementada corretamente: `√(p1 × p2)`
+- [x] Critério de aprovação da aritmética: `≥ 5.0`
+- [x] Critério de aprovação da geométrica: `≥ 7.0`
+- [x] Classe `Disciplina` criada com construtor recebendo estratégia
+- [x] Método `calcularMedia()` delega para a estratégia
+- [x] Todos os getters e setters implementados
 - [ ] Classe `Main` criada testando ambas as estratégias
 - [ ] Código compilando sem erros
-- [ ] Código organizado nos pacotes corretos
-- [ ] Anotação `@Override` em todos os métodos implementados
-- [ ] Saída formatada corretamente com duas casas decimais
+- [x] Código organizado nos pacotes corretos
+- [x] Anotação `@Override` em todos os métodos implementados
+- [x] Saída formatada corretamente com duas casas decimais
 - [ ] Testes manuais realizados com diferentes notas
 
 ---
