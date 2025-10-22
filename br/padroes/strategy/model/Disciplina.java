@@ -32,6 +32,8 @@ public class Disciplina {
 
     @Override
     public String toString() {
+        this.media = estrategia.calcularMedia(this.p1, this.p2);
+        this.situacao = estrategia.verificarSituacao(this.media);
         return String.format("Disciplina: %s, P1: %.2f, P2: %.2f, Média: %.2f, Situação: %s",
                 nome, p1, p2, media, situacao);
     }
