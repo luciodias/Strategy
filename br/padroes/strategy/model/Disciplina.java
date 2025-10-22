@@ -24,8 +24,10 @@ public class Disciplina {
      * Calcula a média usando a estratégia injetada
      */
     public void calcularMedia() {
-        // TODO: Implementar usando estrategia.calcularMedia()
-        // TODO: Implementar usando estrategia.verificarSituacao()
+        // Delega o cálculo para a estratégia
+        this.media = estrategia.calcularMedia(this.p1, this.p2);
+        // Delega a verificação para a estratégia
+        this.situacao = estrategia.verificarSituacao(this.media);
     }
     
     /**
