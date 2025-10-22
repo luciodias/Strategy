@@ -1,25 +1,29 @@
 package br.padroes.strategy.app;
 
 import br.padroes.strategy.model.Disciplina;
-import br.padroes.strategy.strategy.MediaStrategy;
+//import br.padroes.strategy.strategy.MediaStrategy;
 import br.padroes.strategy.strategy.Aritmetica;
 import br.padroes.strategy.strategy.Geometrica;
 
 public class Main {
     public static void main(String[] args) {
         // Testando com Média Aritmética
-        MediaStrategy estrategia = new Aritmetica();
-        Disciplina d = new Disciplina(estrategia);
+        Disciplina a = new Disciplina(new Aritmetica());
+        // Testando com Média Geométrica
+        Disciplina g = new Disciplina(new Geometrica());
+        arrange(a, "Programação Orientada a Objetos", 10, 4);
+        arrange(g, "Programação Orientada a Objetos", 10, 4);
         
-        d.setNome("Padrões de Desenvolvimento");
-        d.setP1(10);
-        d.setP2(5);
+        System.out.println("=== Aritmética ===");
+        System.out.println(a);
+        System.out.println("=== Geométrica ===");
+        System.out.println(g);
+    }
+
+    private static void arrange(Disciplina d, String nome, double p1, double p2) {
+        d.setNome(nome);
+        d.setP1(p1);
+        d.setP2(p2);
         d.calcularMedia();
-        
-        System.out.printf("P1: %.2f  P2: %.2f  Média: %.2f  Situação: %s%n",
-                d.getP1(), d.getP2(), d.getMedia(), d.getSituacao());
-        
-        // Para testar com Média Geométrica, troque:
-        // MediaStrategy estrategia = new Geometrica();
     }
 }
