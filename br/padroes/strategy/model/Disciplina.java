@@ -29,6 +29,12 @@ public class Disciplina {
         // Delega a verificação para a estratégia
         this.situacao = estrategia.verificarSituacao(this.media);
     }
+
+    @Override
+    public String toString() {
+        return String.format("Disciplina: %s, P1: %.2f, P2: %.2f, Média: %.2f, Situação: %s",
+                nome, p1, p2, media, situacao);
+    }
     
     /**
      * Altera o nome da disciplina
@@ -72,4 +78,11 @@ public class Disciplina {
      * @return situação do aluno
      */
     public String getSituacao() {return situacao;}
+
+    private double validarNota(double nota) {
+        if (nota < 0 || nota > 10) {
+            throw new IllegalArgumentException("Nota deve estar entre 0 e 10.");
+        }
+        return nota;
+    }
 }
